@@ -1,98 +1,114 @@
 @font-face {
     font-family:"Barlow Condensed";
-    src: url(Barlow_Condensed.zip);
+    src: url(Barlow_Condensed/BarlowCondensed-Medium.ttf);
 }
 
 @font-face {
     font-family:"Barlow Semi-Condensed";
-    src: url(Barlow_Semi_Condensed.zip);
+    src: url(Barlow_Semi_Condensed/BarlowSemiCondensed-Light.ttf);
 }
 
 @font-face {
     font-family:"Bungee Outline";
-    src: url(Bungee_Outline.zip);
+    src: url(Bungee_Outline/BungeeOutline-Regular.ttf);
 }
 
 @font-face {
     font-family: "Bungee Shade";
-    src: url(Bungee_Shade.zip);
+    src: url(Bungee_Shade/BungeeShade-Regular.ttf);
 }
 
 
 
 body {
-    background-color: darkgrey;
+    background-: url(../img/Mjbak.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
+    min-width: 90vw;
     display: flex;
     justify-content: center;
 }
 
 #wrapperforeverything {
-    height: 200vh;
-    min-width: 1200px;
+    height: 340vh;
+    max-width: 90%;
+   
     background-color: rgba(0, 0, 0, 0.627);
     border-radius: 20px;
-    margin-top: 50px; 
+    margin-top: 4%;
+    
 }
 
 #wrapperforeverything h1 {
     color:white;
-    font-size: 80px;
+    font-size: 5vw;
     font-family: "Bungee Shade";
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-bottom: 50px;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 5%;
 }
 
 nav {
-    padding: 20px;
+    padding: 2%;
     display: flex;
     gap: 4px;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
 }
 
 a {
     background-color: rgba(255, 255, 255, 0.789);
     color: black;
     text-decoration: none;
-    padding: 20px;
-    flex-basis: 246px;
+    padding: 1.5%;
+    flex-basis: 21.7%;
     flex-shrink: 0;
     text-align: center;
-    border-radius: 10px;
-    font-size: 20px;
+    border-radius: 0.6rem;
+    font-size: 2vw;  
 }
 
 a:hover {
     background-color: rgba(0, 0, 0, 0.589);
-    color: white;
+    color:white;
+}
+
+nav > :nth-child(2) {
+    outline: none;
+    border: 2px solid #ffe79e;
+    box-shadow: 0 0 20px #fffae9; 
 }
 
 header {
-    height: 110vh;
-    width: 1150px;
+    height: 64.5vw;
+    width: 95.9%;
     background-color: rgba(0, 0, 0, 0.369);
-    margin-left: 25px;
+    margin-left: 1.9%;
     border: 1px solid white;
     border-radius: 10px;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 3vw;
     padding: 20px 10px;
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
     color: white;
+    font-family: "Bungee Outline";
+    margin-left: 1%;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 2vw;
     padding: 20px 10px;
     padding-top: 5px;
     margin-top: 0;
     color: white;
+    font-family: "Barlow Condensed";
+    margin-left: 1%;
 }
 
 
@@ -101,14 +117,17 @@ section div p{
     margin-left: 60px;
     margin-top: 0;
     margin-bottom: 60px;
+    font-family: "Barlow Semi-Condensed";
+    font-size: 1vw;
 }
 
 section h6 {
-    font-size: 15px;
+    font-size: 1vw;
     color: white;
-    margin-left: 10px;
-    margin-bottom: 4px;
-    max-width: 700px;
+    margin-left: 2.5%;
+    margin-bottom: 0;
+    max-width: 52vw;
+    font-family: "Barlow Semi-Condensed";
 
 }
 
@@ -118,51 +137,266 @@ section {
 
 section img {
     border-radius: 20px 20px 0px 0px;
-    margin: 10px;
+    margin: 2%;
+    margin-right: 15px;
     margin-bottom: 3px;
-    margin-left: 5px;
+    margin-top: 3%;
+
+
+    width: 34.4vw;
+    height: 34.4vw;
+    
 }
 
-section img:hover {
-    background-image: url(../img/MJrecord11.jpg);
-    
+section div img:hover {
+    content: url(../img/MJrecord11.jpg);
+    height: 34.4vw;
+    width: 34.4vw;   
+}
+
+
+#bildegrid-1 {
+    display: grid;
 }
 
 .middleboxes1 {
-    max-width: 200px;
-
-    display: grid;
-    grid-template-columns: 221px 221px 221px 221px 223px;
-    gap: 8px;
-    
+    display: flex;
+    gap: 7px;
 }
 
-.middleboxes1 div:first-child {
-    grid-column: 4;
-    background-color: rgb(0, 0, 0);
-    border-radius: 0px 0px 0px 20px;
-    color: white;
+.middleboxes1 > :first-child {
+   background-color: rgb(0, 0, 0);
+   width: 17vw;
+   border-radius: 0px 0px 20px 20px;
+   color: whitesmoke;
+   margin-left: 0.6vw;
+   padding: 1.5vw 0;
 }
 
-.middleboxes1 div:last-child {
+.middleboxes1 > :last-child {
     background-color: rgb(0, 0, 0);
-    border-radius: 0px 0px 20px 0px;
-    color: white;
-
+    width: 17vw;
+    border-radius: 0px 0px 20px 20px;
+    color: whitesmoke;
+    margin-right: 1.1vw;
+    padding: 1.5vw 0;  
 }
 
 .middleboxes1 p {
-    margin: 15px;
-    margin-bottom: 0px;
-    font-size: 20px;
+    margin-left: 24px;
+    margin-bottom: 2px;
+    font-size: 1.2vw;
+    font-family: "Barlow Semi-Condensed";
 }
 
 .middleboxes1 ol {
-    padding-left: 30px;
-    margin-top: 2px;
-    font-size: 15px;
+    margin-top: 0px;
+    font-size: 1vw;
+    font-family: "Barlow Semi-Condensed";
+}
+
+.bottomboxes-1 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    
+    max-width: 98%;
+    margin-left: 10px;
+    margin-top: 1vw;
+    gap: 4px;
+    
+}
+
+.bottomboxes-1 p {
+    font-family: "Barlow Condensed";
+    font-size: 1.1vw;
+    width: 80%;
+    margin: 13% auto;
+}
+
+.bottomboxes-1 > :first-child {
+    grid-column: 1;
+    background-color: whitesmoke;
+    border-radius: 20px 0px 20px 20px;
+    display: grid;
+    align-items: center;
+    margin: 2%;
+
+}
+
+.bottomboxes-1 :nth-child(2) {
+    grid-column: 3;
+    background-color: whitesmoke;
+    border-radius: 20px 20px 20px 0px;
+}
+
+.bottomboxes-1 :nth-child(3) {
+    grid-column: 4;  
+    background-image: url(../img/MJinbox.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 20px 20px 20px;
+    color: whitesmoke;
+    display: grid;
+    align-items: end;
+    
+}
+
+.bottomboxes-1 :nth-child(4) {
+    grid-column: 5;
+    background-color: whitesmoke;
+    border-radius: 20px 20px 0px 20px;
+    display: grid;
+    align-items: center;
+    margin: 0.5%;
+    
+}
+
+main {
+    height: 64.5vw;
+    width: 95.9%;
+    background-color: rgba(0, 0, 0, 0.369);
+    margin-left: 1.9%;
+    margin-top: 2%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+footer div p{
+    color: white;
+    margin-left: 60px;
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-family: "Barlow Semi-Condensed";
+    font-size: 1vw;
+}
+
+footer h6 {
+    font-size: 1vw;
+    color: white;
+    margin-left: 2.5%;
+    margin-bottom: 0;
+    max-width: 52vw;
+    font-family: "Barlow Semi-Condensed";
+
+}
+
+footer {
+    display: flex;
+}
+
+footer img {
+    border-radius: 20px 20px 0px 0px;
+    margin: 2%;
+    margin-right: 15px;
+    margin-bottom: 3px;
+    margin-top: 3%;
+
+
+    width: 34.4vw;
+    height: 34.4vw;
+    
+}
+
+footer div img:hover {
+    content: url(../img/MJrecord22.jpg);
+    height: 34.4vw;
+    width: 34.4vw;   
 }
 
 
+.bildegrid-2 {
+    display: grid;
+}
 
+#middleboxes2 {
+    display: flex;
+    gap: 7px;
+}
 
+#middleboxes2 > :first-child {
+   background-color: rgb(0, 0, 0);
+   width: 17vw;
+   border-radius: 0px 0px 20px 20px;
+   color: whitesmoke;
+   margin-left: 0.6vw;
+   padding: 1.5vw 0;
+}
+
+#middleboxes2 > :last-child {
+    background-color: rgb(0, 0, 0);
+    width: 17vw;
+    border-radius: 0px 0px 20px 20px;
+    color: whitesmoke;
+    margin-right: 1.1vw;
+    padding: 1.5vw 0;  
+}
+
+#middleboxes2 p {
+    margin-left: 24px;
+    margin-bottom: 2px;
+    font-size: 1.2vw;
+    font-family: "Barlow Semi-Condensed";
+}
+
+#middleboxes2 ol {
+    margin-top: 0px;
+    font-size: 1vw;
+    font-family: "Barlow Semi-Condensed";
+}
+
+.bottomboxes-2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    
+    max-width: 98%;
+    margin-left: 10px;
+    margin-top: 1vw;
+    gap: 4px;
+    
+}
+
+.bottomboxes-2 p {
+    font-family: "Barlow Condensed";
+    font-size: 1.1vw;
+    width: 80%;
+    margin: 13% auto;
+}
+
+.bottomboxes-2 > :first-child {
+    grid-column: 1;
+    background-color: whitesmoke;
+    border-radius: 20px 0px 20px 20px;
+    display: grid;
+    align-items: center;
+    margin: 2%;
+
+}
+
+.bottomboxes-2 :nth-child(2) {
+    grid-column: 3;
+    background-color: whitesmoke;
+    border-radius: 20px 20px 20px 0px;
+}
+
+.bottomboxes-2 :nth-child(3) {
+    grid-column: 4;  
+    background-image: url(../img/MJinbox.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 20px 20px 20px;
+    color: whitesmoke;
+    display: grid;
+    align-items: end;
+    
+}
+
+.bottomboxes-2 :nth-child(4) {
+    grid-column: 5;
+    background-color: whitesmoke;
+    border-radius: 20px 20px 0px 20px;
+    display: grid;
+    align-items: center;
+    margin: 0.5%;    
+}
