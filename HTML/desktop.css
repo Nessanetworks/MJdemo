@@ -21,7 +21,7 @@
 
 
 body {
-    background-: url(../img/Mjbak.jpg);
+    background-image: url(../img/Mjbak.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,13 +33,14 @@ body {
 }
 
 #wrapperforeverything {
-    height: 340vh;
+    height: 163vw;
     max-width: 90%;
    
-    background-color: rgba(0, 0, 0, 0.627);
+    background-color: rgba(0, 0, 0, 0.536);
     border-radius: 20px;
     margin-top: 4%;
-    
+
+    margin-bottom: 8%;
 }
 
 #wrapperforeverything h1 {
@@ -84,7 +85,7 @@ nav > :nth-child(2) {
 header {
     height: 64.5vw;
     width: 95.9%;
-    background-color: rgba(0, 0, 0, 0.369);
+    background-color: rgba(0, 0, 0, 0.336);
     margin-left: 1.9%;
     border: 1px solid white;
     border-radius: 10px;
@@ -255,7 +256,7 @@ section div img:hover {
 main {
     height: 64.5vw;
     width: 95.9%;
-    background-color: rgba(0, 0, 0, 0.369);
+    background-color: rgba(0, 0, 0, 0.336);
     margin-left: 1.9%;
     margin-top: 2%;
     border: 1px solid white;
@@ -289,7 +290,7 @@ footer img {
     border-radius: 20px 20px 0px 0px;
     margin: 2%;
     margin-right: 15px;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
     margin-top: 3%;
 
 
@@ -315,21 +316,21 @@ footer div img:hover {
 }
 
 #middleboxes2 > :first-child {
-   background-color: rgb(0, 0, 0);
+   background-color: rgb(42, 17, 3);
    width: 17vw;
    border-radius: 0px 0px 20px 20px;
    color: whitesmoke;
    margin-left: 0.6vw;
-   padding: 1.5vw 0;
+   padding: 1vw 0;
 }
 
 #middleboxes2 > :last-child {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(42, 17, 3);
     width: 17vw;
     border-radius: 0px 0px 20px 20px;
     color: whitesmoke;
     margin-right: 1.1vw;
-    padding: 1.5vw 0;  
+    padding: 1vw 0;  
 }
 
 #middleboxes2 p {
@@ -349,54 +350,65 @@ footer div img:hover {
     display: grid;
     justify-content: center;
     grid-template-columns: 2fr 1fr 2fr 1fr;
-    
+
     max-width: 98%;
     margin-left: 10px;
     margin-top: 1vw;
     gap: 4px;
-    
 }
 
 .bottomboxes-2 p {
     font-family: "Barlow Condensed";
+    color: black;
     font-size: 1.1vw;
     width: 80%;
-    margin: 13% auto;
+    margin: 7% auto;
+}
+
+.bottomboxes-2 :nth-child(3) p {
+    color: white;
 }
 
 .bottomboxes-2 > :first-child {
     grid-column: 1;
-    background-color: whitesmoke;
-    border-radius: 20px 0px 20px 20px;
+    background-color: rgb(238, 189, 103);
+    border-radius: 20px 20px 20px 0px;
     display: grid;
-    align-items: center;
-    margin: 2%;
-
+    align-items: center;   
 }
 
 .bottomboxes-2 :nth-child(2) {
-    grid-column: 3;
-    background-color: whitesmoke;
-    border-radius: 20px 20px 20px 0px;
+    grid-column: 2;
+    background-color: rgb(238, 189, 103);
+    border-radius: 0px 20px 20px 20px;
+    display: grid;
+    align-items: center;
 }
 
 .bottomboxes-2 :nth-child(3) {
-    grid-column: 4;  
-    background-image: url(../img/MJinbox.jpg);
+    grid-column: 3;  
+    background-image: url(../img/mjgold.jpg);
     background-size: cover;
     background-position: center;
-    border-radius: 0px 20px 20px 20px;
-    color: whitesmoke;
+    border-radius: 0px 20px 20px 20px; 
+    
     display: grid;
     align-items: end;
-    
 }
 
 .bottomboxes-2 :nth-child(4) {
-    grid-column: 5;
-    background-color: whitesmoke;
+    grid-column: 4;
+    background-color: rgb(238, 189, 103);
     border-radius: 20px 20px 0px 20px;
     display: grid;
     align-items: center;
     margin: 0.5%;    
+}
+
+h5 {
+    color: white;
+    font-family: "Barlow Semi-Condensed";
+    margin-left: 2%;
+    margin-top: 6%;
+    font-size: 1vw;
 }
