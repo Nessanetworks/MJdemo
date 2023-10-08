@@ -18,7 +18,10 @@
     src: url(Bungee_Shade/BungeeShade-Regular.ttf);
 }
 
-
+@font-face {
+    font-family: "Barlow Semi-Condensed Bold";
+    src: url(../HTML/Barlow_Semi_Condensed/BarlowSemiCondensed-Bold.ttf);
+}
 
 body {
     background-image: url(../img/Mjbak.jpg);
@@ -33,19 +36,18 @@ body {
 }
 
 #wrapperforeverything {
-    height: 163vw;
-    max-width: 90%;
+    height: auto;
+    max-width: 83%;
    
     background-color: rgba(0, 0, 0, 0.536);
     border-radius: 20px;
     margin-top: 4%;
-
     margin-bottom: 8%;
 }
 
 #wrapperforeverything h1 {
     color:white;
-    font-size: 5vw;
+    font-size: 6vw;
     font-family: "Bungee Shade";
     margin-top: 1%;
     margin-left: 2%;
@@ -57,6 +59,7 @@ nav {
     display: flex;
     gap: 4px;
     margin-bottom: 5%;
+    margin-right: 2vw;
 }
 
 a {
@@ -67,9 +70,9 @@ a {
     flex-basis: 21.7%;
     flex-shrink: 0;
     text-align: center;
-    border-radius: 5px;
-    font-size: 2vw;  
-
+    border-radius: 10px;
+    font-size: 2vw; 
+    font-family:"Barlow Semi-Condensed"; 
 }
 
 a:hover {
@@ -81,14 +84,17 @@ nav > :nth-child(2) {
     outline: none;
     border: 2px solid #ffe79e;
     box-shadow: 0 0 20px #fffae9; 
+    font-family: "Barlow Semi-Condensed Bold";
 }
 
-a:hover nav > :nth-child(2)  {
-    
+nav:hover > :nth-child(2)  {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.642);
+    cursor: default;  
 }
 
 header {
-    height: 64.5vw;
+    height: auto;
     width: 95.9%;
     background-color: rgba(0, 0, 0, 0.336);
     margin-left: 1.9%;
@@ -97,7 +103,7 @@ header {
 }
 
 h2 {
-    font-size: 3vw;
+    font-size: 3.3vw;
     padding: 20px 10px;
     margin-top: 0;
     margin-bottom: 0;
@@ -108,7 +114,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2vw;
+    font-size: 2.3vw;
     padding: 20px 10px;
     padding-top: 5px;
     margin-top: 0;
@@ -117,14 +123,13 @@ h3 {
     margin-left: 1%;
 }
 
-
 section div p{
     color: white;
-    margin-left: 60px;
+    margin-left: 12%;
     margin-top: 0;
     margin-bottom: 60px;
     font-family: "Barlow Semi-Condensed";
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 section h6 {
@@ -135,7 +140,6 @@ section h6 {
     max-width: 50vw;
     font-family: "Barlow Semi-Condensed";
     font-weight: lighter;
-
 }
 
 section {
@@ -149,10 +153,8 @@ section img {
     margin-bottom: 3px;
     margin-top: 3%;
 
-
     width: 34.4vw;
-    height: 34.4vw;
-    
+    height: 34.4vw;  
 }
 
 section div img:hover {
@@ -161,8 +163,7 @@ section div img:hover {
     width: 34.4vw;   
 }
 
-
-#bildegrid-1 {
+.bildegrid-1 {
     display: grid;
 }
 
@@ -190,15 +191,15 @@ section div img:hover {
 }
 
 .middleboxes1 p {
-    margin-left: 24px;
+    margin-left: 20%;
     margin-bottom: 2px;
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     font-family: "Barlow Semi-Condensed";
 }
 
 .middleboxes1 ol {
     margin-top: 0px;
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-family: "Barlow Semi-Condensed";
 }
 
@@ -208,17 +209,17 @@ section div img:hover {
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
     
     max-width: 98%;
-    margin-left: 10px;
+    margin-left: 1%;
+    margin-bottom: 2%;
     margin-top: 1vw;
-    gap: 4px;
-    
+    gap: 4px; 
 }
 
 .bottomboxes-1 p {
     font-family: "Barlow Condensed";
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     width: 80%;
-    margin: 13% auto;
+    margin: 15% auto;
 }
 
 .bottomboxes-1 > :first-child {
@@ -228,7 +229,6 @@ section div img:hover {
     display: grid;
     align-items: center;
     margin: 2%;
-
 }
 
 .bottomboxes-1 :nth-child(2) {
@@ -245,8 +245,7 @@ section div img:hover {
     border-radius: 0px 20px 20px 20px;
     color: whitesmoke;
     display: grid;
-    align-items: end;
-    
+    align-items: end;  
 }
 
 .bottomboxes-1 :nth-child(4) {
@@ -260,7 +259,7 @@ section div img:hover {
 }
 
 main {
-    height: 64.5vw;
+    height: auto;
     width: 95.9%;
     background-color: rgba(0, 0, 0, 0.336);
     margin-left: 1.9%;
@@ -271,19 +270,19 @@ main {
 
 footer div p{
     color: white;
-    margin-left: 60px;
+    margin-left: 12%;
     margin-top: 0;
     margin-bottom: 60px;
     font-family: "Barlow Semi-Condensed";
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 footer h6 {
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: white;
     margin-left: 2.5%;
     margin-bottom: 0;
-    max-width: 52vw;
+    max-width: 50vw;
     font-family: "Barlow Semi-Condensed";
     font-weight: lighter;
 }
@@ -299,10 +298,8 @@ footer img {
     margin-bottom: 8px;
     margin-top: 3%;
 
-
     width: 34.4vw;
-    height: 34.4vw;
-    
+    height: 34.4vw;  
 }
 
 footer div img:hover {
@@ -340,15 +337,15 @@ footer div img:hover {
 }
 
 #middleboxes2 p {
-    margin-left: 24px;
-    margin-bottom: 2px;
-    font-size: 1.2vw;
+    margin-left: 20%;
+    margin-bottom: 1%;
+    font-size: 1.6vw;
     font-family: "Barlow Semi-Condensed";
 }
 
 #middleboxes2 ol {
-    margin-top: 0px;
-    font-size: 1vw;
+    margin-top: 0;
+    font-size: 1.1vw;
     font-family: "Barlow Semi-Condensed";
 }
 
@@ -358,7 +355,8 @@ footer div img:hover {
     grid-template-columns: 2fr 1fr 2fr 1fr;
 
     max-width: 98%;
-    margin-left: 10px;
+    margin-left: 1%;
+    margin-bottom: 10px;
     margin-top: 1vw;
     gap: 4px;
 }
@@ -366,7 +364,7 @@ footer div img:hover {
 .bottomboxes-2 p {
     font-family: "Barlow Condensed";
     color: black;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     width: 80%;
     margin: 7% auto;
 }
@@ -417,6 +415,7 @@ h5 {
     margin-left: 2%;
     margin-top: 6%;
     font-size: 1vw;
+    margin-bottom: 0;
 }
 
 
@@ -432,12 +431,12 @@ h5 {
 @media (max-width: 500px) {
 
     body {
-
         background-image: url(../img/possible2.jpg);
     }
 
     #wrapperforeverything {
         background-color: rgba(0, 0, 0, 0);
+        max-width: 90%;
     }
 
     #wrapperforeverything h1 {
@@ -448,7 +447,7 @@ h5 {
 
     a {
         height: 45px;
-        flex-basis: 24%;
+        flex-basis: 24.8%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -458,14 +457,13 @@ h5 {
     }
 
     header {
-        height: 1440px;
-        
+        height: auto;  
     }
 
     section {
         display: grid;
         grid-template-columns: 2fr;
-        grid-template-rows: 600px 1fr;
+        grid-template-rows: 120vw 1fr;
     }
 
     .bildegrid-1 {
@@ -481,19 +479,19 @@ h5 {
 
     
     section img {
-        width: 80vw;
-        height: 80vw; 
+        width: 82vw;
+        height: 82vw; 
         margin-left: 3.5%;
     }
     
     section div img:hover {
-        height: 80vw;
-        width: 80vw;   
+        height: 82vw;
+        width: 82vw;   
     }
 
 
     h2 {
-        margin-top: 0;
+        margin-top: 3%;
         font-size: 7.5vw;
         margin-bottom: 0;
     }
@@ -512,23 +510,21 @@ h5 {
     section h6 {
         margin-top: 20px;
         font-size: 3.5vw;
-        min-width: 340px;
-        max-width: 400px;
+        max-width: 370px;
         margin-left: 4%;
     }
 
     .middleboxes1 > :first-child {
-        width: 39.5vw;
+        width: 40vw;
         padding: 1vw 0;
-        line-height: 23px;
+        line-height: 20px;
         margin-left: 3.5%;
     }
         
     .middleboxes1 > :last-child {
-        
-        width: 39vw;
+        width: 41.5vw;
         padding-top: 1vw; 
-        line-height: 23px; 
+        line-height: 20px; 
     }
         
     .middleboxes1 p {
@@ -549,16 +545,14 @@ h5 {
         margin-left: none;
         margin-right: 3%;
         margin-top: 2vw;
-        gap: 4px;
-        
+        gap: 4px;  
     }
     
     .bottomboxes-1 p {
         font-size: 80%;
         width: 20vw;
         margin: 5%;
-        margin-left: 12px;
-        
+        margin-left: 12px; 
     }
     
     .bottomboxes-1 > :first-child {
@@ -571,41 +565,36 @@ h5 {
     .bottomboxes-1 :nth-child(2) {
         grid-column: 2 / 4;
         grid-row: 1;
-        border-radius: 20px 20px 20px 0px;
-
+        border-radius: 20px 20px 20px 0px; 
     }
 
     .bottomboxes-1 :nth-child(2) p {
         width: 200px;
         margin-top: 50px;
-       
     }
     
     .bottomboxes-1 :nth-child(3) {
         grid-column: 2;  
-        grid-row: 2;
-        
+        grid-row: 2; 
     }
     
     .bottomboxes-1 :nth-child(4) {
         grid-column: 3;
         grid-row: 2;
-        margin: 0%;
-        
+        margin: 0%; 
     }
 
 
-
-    /* SECOND HALF OF THE PAGE */
+    /* SECOND HALF OF THE PAGE FOR MOBILE RESPONSIVENESS */
 
     main {
-        height: 1440px;
+        height: auto;
     }
 
     footer {
         display: grid;
         grid-template-columns: 2fr;
-        grid-template-rows: 600px 1fr;
+        grid-template-rows: 120vw 1fr;
     }
 
     .bildegrid-2 {
@@ -639,8 +628,7 @@ h5 {
     footer h6 {
         margin-top: 15px;
         font-size: 3.5vw;
-        min-width: 340px;
-        max-width: 400px;
+        max-width: 360px;
         margin-left: 4%;
     }
 
@@ -711,14 +699,30 @@ h5 {
     }
 
 
+    section > :nth-child(3) {
+        display: none;
+    } 
 
+    section > :nth-child(4) {
+        display: none;
+    }
 
+    footer > :nth-child(3) {
+        display: none;
+    }
 
-
-
-
+    footer > :nth-child(4) {
+        display: none;
+    }
 
 }
+
+
+
+
+
+
+/* MEDIA QUERIES FOR 800 - 900 FONT SIZES!!*/
 
 @media (min-width: 800px) and (max-width: 900px) {
 
@@ -727,7 +731,7 @@ h5 {
     }
 
     nav {
-        margin-right: 11px;
+        margin-right: 18px;
     }
 
     a {
@@ -736,11 +740,11 @@ h5 {
     }
 
     header {
-        height: 98vh;
+        height: auto;
     }
 
     h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     h3 {
@@ -756,17 +760,16 @@ h5 {
     }
 
     .middleboxes1 p {
-        font-size: 13px;
-
-    }
-
-    .middleboxes1 ol {
         font-size: 12px;
     }
 
+    .middleboxes1 ol {
+        font-size: 11px;
+    }
+
     .bottomboxes-1 p {
-        font-size: 13px;
-        padding: 15px 0;
+        font-size: 12px;
+        padding: 8px 0;
     }
 
     .bottomboxes-1 :nth-child(4) {
@@ -774,11 +777,11 @@ h5 {
     }
 
 
-
+/* SECOND HALF OF PAGE FOR 800 - 900 */
 
 
     main {
-        height: 98vh;
+        height: auto;
     }
 
     footer div p{
@@ -803,7 +806,6 @@ h5 {
     .bottomboxes-2 p {
         font-size: 12px;
         padding: 3px 0;
-   
     }
 
     .bottomboxes-2 :nth-child(4) {
@@ -814,48 +816,459 @@ h5 {
         height: 1600px;
     }
 
+    h5 {
+        font-size: 15px;
+    }
+
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
+/* MEDIA QUERIES TO STOP EVERYTHING FROM GROWING AFTER 1200PX*/
 
-    main {
-        height: 
+@media (min-width: 1200px) {
+
+    #wrapperforeverything h1 {
+        font-size: 70px;
+    }
+
+    #wrapperforeverything {
+        height: 2050px;
+        max-width: 1000px;
+        margin-top: 55px;
+        margin-bottom: 80px;
+    }
+
+    a {
+        flex-basis: 205px;
+        font-size: 23px;
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+
+    header {
+        height: auto;
     }
 
     h2 {
-        font-size: 
+        font-size: 35px;
     }
 
     h3 {
-        font-size: 
+        font-size: 25px;
     }
 
-    footer div p{
-        font-size: 
+    section div p {
+        font-size: 18px;
+    }
+
+    section h6 {
+        font-size: 18px;
+    }
+
+    section img {
+        width: 416px;
+        height: 416px;
+    }
+
+    section div img:hover {
+        width: 416px;
+        height: 416px;
+    }
+
+    .middleboxes1 > :first-child {
+        width: 206px;
+    }
+
+    .middleboxes1 > :last-child {
+        width: 205px;
+    }
+
+    .middleboxes1 p {
+        font-size: 16px;
+    }
+
+    .middleboxes1 ol {
+        font-size: 13px;
+    }
+
+    .bottomboxes-1 {
+        max-width: 937px;
+    }
+
+    .bottomboxes-1 p {
+        font-size: 14px; 
+        padding: 5px; 
+    }
+
+
+
+    main {
+        height: auto;
+    }
+
+    footer div p {
+        font-size: 18px;
     }
 
     footer h6 {
-        font-size: 
+        font-size: 18px;
+    }
 
+    footer img {
+        width: 416px;
+        height: 416px;
+    }
+
+    footer div img:hover {
+        width: 416px;
+        height: 416px;
+    }
+
+    #middleboxes2 > :first-child {
+        width: 206px;
+    }
+
+    #middleboxes2 > :last-child {
+        width: 205px;
     }
 
     #middleboxes2 p {
-        font-size: 
-
+        font-size: 16px;
     }
 
     #middleboxes2 ol {
-        font-size: 
+        font-size: 13px;
     }
 
+    .bottomboxes-2 {
+        max-width: 937px;
+    }
 
     .bottomboxes-2 p {
-        font-size: 
-   
+        font-size: 14px; 
+        padding: 5px; 
     }
 
+}
+
+
+
+@media (min-width: 501px) and (max-width: 799px) {
+    body {
+        background-image: url(../img/white.png);
+    }
+
+    #wrapperforeverything h1 {
+        font-size: 11vw;
+        text-align: center;
+    }
+
+    nav {
+        margin-bottom: 8%;
+    }
+
+    a {
+        flex-basis: 17vw;
+        font-size: 2.5vw;
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    h2 {
+        font-size: 6vw;
+        padding: 0;
+        margin-left: 2%;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 48vw 30.4vw;
+        grid-template-rows: 25vw 25vw 30vw 27vw 4vw;
+
+        gap: 1px;
+    }
+
+    .bildegrid-1 {
+        grid-column: 1;
+        grid-row: 1 / 2;
+        margin-left: 0.9%;
+    }
+
+    section > :nth-child(3) {
+        background-color: black;
+        grid-template-columns: 2;
+        grid-row: 1;
+
+        max-height: 22.7vw;
+        margin-top: 5%;
+
+        border-radius: 0 20px 0 0;
+    }
+
+    section > :nth-child(4) {
+        background-color: black;
+        grid-column: 2;
+        grid-row: 2;
+
+        max-height: 22.4vw;
+        
+        border-radius: 0 0 20px 0;
+    }
+
+    section > :nth-child(3) p, section > :nth-child(4) p {
+        font-size: 3vw;
+        color: whitesmoke;
+        margin-left: 7%;
+        margin-top: 8%;
+        margin-bottom: 1%;
+
+        padding: 0;
+        font-family:"Barlow Semi-Condensed";
+    }
+
+
+    section > :nth-child(3) ol, section > :nth-child(4) ol {
+        font-size: 1.6vw;
+        color: whitesmoke;
+        margin-top: 0;
+        margin-left: 13%;
+        padding: 0;
+        line-height: 1.2;
+        font-family:"Barlow Semi-Condensed";
+    }
+
+    section > :first-child {
+        grid-row: 3;
+        grid-column: 1 / 3;
+    }
+
+    section div p {
+        font-size: 2.5vw;
+    }
+
+    section h6 {
+        font-size: 2.5vw;
+        max-width: none;
+    }
+
+    section img {
+        border-radius: 20px 0 0 20px;
+        
+        width: 46vw;
+        height: 46vw;
+    }
+
+    section div img:hover {
+        width: 46vw;
+        height: 46vw;
+    }
+
+    .middleboxes1 > :first-child {
+        display: none;
+    }
+
+    .middleboxes1 > :last-child {
+        display: none;
+    }
+
+    .bottomboxes-1 {
+        display: grid;
+        grid-template-columns: 20vw 19vw 19vw 19vw;
+        grid-template-rows: 20vw 20vw;
+
+        margin-right: 5%;
+        margin-left: 3%;
+        margin-bottom: 4%;
+        margin-top: 3vw;
+    }
+
+    .bottomboxes-1 > :first-child {
+        grid-column: 1;
+        grid-row: 1;
+
+        margin-left: 8%;
+    }
+    
+    .bottomboxes-1 :nth-child(2) {
+        grid-column: 3 / 5;
+        grid-row: 1;
+
+        margin-right: ;
+    }
+    
+    .bottomboxes-1 :nth-child(3) {
+        grid-column: 2; 
+        grid-row: 2;  
+    }
+    
+    .bottomboxes-1 :nth-child(4) {
+        grid-column: 3;
+        grid-row: 2; 
+    }
+
+    .bottomboxes-1 p {
+        font-size: 1.8vw;   
+    }
+
+
+    main {
+        height: auto;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 48vw 30.4vw;
+        grid-template-rows: 25vw 25vw 30vw 27vw 4vw;
+
+        gap: 1px;
+    }
+
+    .bildegrid-2 {
+        grid-column: 1;
+        grid-row: 1 / 2;
+        margin-left: 0.9%;
+    }
+
+    footer > :nth-child(3) {
+        background-color: rgb(35, 14, 14);
+        grid-template-columns: 2;
+        grid-row: 1;
+
+        max-height: 22.7vw;
+        margin-top: 5%;
+
+        border-radius: 0 20px 0 0;
+    }
+
+    footer > :nth-child(4) {
+        background-color: rgb(35, 14, 14);
+        grid-column: 2;
+        grid-row: 2;
+
+        max-height: 22.4vw;
+        
+        border-radius: 0 0 20px 0;
+        
+    }
+
+    footer > :nth-child(3) p, footer > :nth-child(4) p {
+        font-size: 3vw;
+        color: whitesmoke;
+        margin-left: 7%;
+        margin-top: 8%;
+        margin-bottom: 1%;
+
+        padding: 0;
+        font-family:"Barlow Semi-Condensed";
+    }
+
+
+    footer > :nth-child(3) ol, footer > :nth-child(4) ol {
+        font-size: 1.6vw;
+        color: whitesmoke;
+        margin-top: 0;
+        margin-left: 13%;
+        padding: 0;
+        line-height: 1.2;
+        font-family:"Barlow Semi-Condensed";
+    }
+
+    footer > :first-child {
+        grid-row: 3;
+        grid-column: 1 / 3;
+    }
+
+    footer div p {
+
+        font-size: 2.5vw;
+    }
+
+    footer h6 {
+        font-size: 2.5vw;
+        max-width: none;
+    }
+
+    footer img {
+        border-radius: 20px 0 0 20px;
+        
+        width: 46vw;
+        height: 46vw;
+    }
+
+    footer div img:hover {
+        width: 46vw;
+        height: 46vw;
+    }
+
+    #middleboxes2 > :first-child {
+        display: none;
+    }
+
+    #middleboxes2 > :last-child {
+        display: none;
+    }
+
+    .bottomboxes-2 {
+        display: grid;
+        grid-template-columns: 19vw 19vw 19vw 19vw;
+        grid-template-rows: 20vw 20vw;
+
+        margin-right: 1.3%;
+        margin-top: 6vw;
+        margin-bottom: 3%;
+    }
+
+    .bottomboxes-2 > :first-child {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+    
+    .bottomboxes-2 :nth-child(2) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    
+    .bottomboxes-2 :nth-child(3) {
+        grid-column: 2 / 4; 
+        grid-row: 2;  
+    }
+    
     .bottomboxes-2 :nth-child(4) {
-        margin-right: 
+        grid-column: 4;
+        grid-row: 2; 
+    }
+
+    .bottomboxes-2 p {
+        font-size: 1.7vw;   
+    }
+
+    h5 {
+        font-size: 2vw;
     }
 }
 
+@media (min-width: 800px) {
+    section > :nth-child(3) {
+        display: none;
+    } 
+
+    section > :nth-child(4) {
+        display: none;
+    }
+
+    footer > :nth-child(3) {
+        display: none;
+    }
+
+    footer > :nth-child(4) {
+        display: none;
+    }
+
+}
