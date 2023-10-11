@@ -144,6 +144,7 @@ section h6 {
 
 section {
     display: flex;
+    position: relative;
 }
 
 section img {
@@ -153,23 +154,46 @@ section img {
     margin-bottom: 3px;
     margin-top: 3%;
 
+    height: 34.4vw;
     width: 34.4vw;
-    height: 34.4vw;  
+     
+    position: relative;
+    z-index: 1;
+
+    transition: opacity 1.5s ease-in-out;
 }
 
-section div img:hover {
+img[src="../img/MJrecord11.jpg"] {
+    position: relative;
+    z-index: 0;
+    bottom: 35.75vw;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+section img:hover {
+    opacity: 0;
+
+}
+
+/*section div img:hover {
     content: url(../img/MJrecord11.jpg);
     height: 34.4vw;
     width: 34.4vw;   
-}
+}*/
+
 
 .bildegrid-1 {
     display: grid;
-}
+    height: 51vw;
+}   
 
 .middleboxes1 {
     display: flex;
     gap: 7px;
+    
+    position: relative;
+    bottom: 35.5vw;
 }
 
 .middleboxes1 > :first-child {
@@ -213,6 +237,8 @@ section div img:hover {
     margin-bottom: 2%;
     margin-top: 1vw;
     gap: 4px; 
+
+   
 }
 
 .bottomboxes-1 p {
@@ -299,23 +325,45 @@ footer img {
     margin-top: 3%;
 
     width: 34.4vw;
-    height: 34.4vw;  
+    height: 34.4vw; 
+
+    position: relative;
+    z-index: 1;
+
+    transition: opacity 1.5s ease-in-out;  
 }
 
-footer div img:hover {
+
+img[src="../img/MJrecord22.jpg"] {
+    position: relative;
+    z-index: 0;
+    bottom: 36.3vw;
+}
+
+footer img:hover {
+    opacity: 0;
+
+}
+
+/*footer div img:hover {
     content: url(../img/MJrecord22.jpg);
     height: 34.4vw;
     width: 34.4vw;   
-}
+}*/
 
 
 .bildegrid-2 {
     display: grid;
+    height: 51vw;
 }
 
 #middleboxes2 {
     display: flex;
     gap: 7px;
+
+    position: relative;
+    bottom: 36vw;
+
 }
 
 #middleboxes2 > :first-child {
@@ -430,6 +478,22 @@ h5 {
 
 @media (max-width: 500px) {
 
+    .middleboxes1 {
+        position: static;
+    }
+
+    #middleboxes2 {
+        position: static;
+    }
+
+    img[src="../img/MJrecord11.jpg"] {
+        display: none;
+    }
+
+    img[src="../img/MJrecord22.jpg"] {
+        display: none;
+    }
+
     body {
         background-image: url(../img/possible2.jpg);
     }
@@ -481,12 +545,13 @@ h5 {
     section img {
         width: 82vw;
         height: 82vw; 
-        margin-left: 3.5%;
+        margin-left: 2.5%;
     }
     
     section div img:hover {
         height: 82vw;
-        width: 82vw;   
+        width: 82vw; 
+        opacity: 1;
     }
 
 
@@ -518,11 +583,11 @@ h5 {
         width: 40vw;
         padding: 1vw 0;
         line-height: 20px;
-        margin-left: 3.5%;
+        margin-left: 2.1%;
     }
         
     .middleboxes1 > :last-child {
-        width: 41.5vw;
+        width: 41vw;
         padding-top: 1vw; 
         line-height: 20px; 
     }
@@ -538,13 +603,14 @@ h5 {
     .bottomboxes-1 {
         display: grid;
         justify-content: center;
-        grid-template-columns: 26vw 26vw 26vw;
+        grid-template-columns: 27vw 27vw 26vw;
         grid-template-rows: 170px 170px;
         
         max-width: none;
-        margin-left: none;
-        margin-right: 3%;
+        margin-left: 2%;
+        margin-right: 2%;
         margin-top: 2vw;
+        margin-bottom: 3vw;
         gap: 4px;  
     }
     
@@ -617,7 +683,8 @@ h5 {
     
     footer div img:hover {
         height: 80vw;
-        width: 80vw;   
+        width: 80vw; 
+        opacity: 1;  
     }
 
     footer div p {
@@ -655,7 +722,7 @@ h5 {
 
 
     .bottomboxes-2 {
-        grid-template-columns: 27vw 27vw 25vw;
+        grid-template-columns: 28vw 28vw 25vw;
         grid-template-rows: 170px 170px;
 
         max-width: none;
@@ -759,6 +826,10 @@ h5 {
         font-size: 12px;
     }
 
+    .bildegrid-1 {
+        height: 52vw;
+    }
+
     .middleboxes1 p {
         font-size: 12px;
     }
@@ -790,7 +861,10 @@ h5 {
 
     footer h6 {
         font-size: 12px;
+    }
 
+    .bildegrid-2 {
+        height: 54vw;
     }
 
     #middleboxes2 p {
@@ -869,9 +943,24 @@ h5 {
         height: 416px;
     }
 
-    section div img:hover {
+    img[src="../img/MJrecord11.jpg"] {
         width: 416px;
         height: 416px;
+
+        bottom: 432px;
+    }
+
+    /*section div img:hover {
+        width: 416px;
+        height: 416px;
+    }*/
+
+    .bildegrid-1 {
+        height: 620px;
+    }
+
+    .middleboxes1 {
+        bottom: 425px;
     }
 
     .middleboxes1 > :first-child {
@@ -918,9 +1007,24 @@ h5 {
         height: 416px;
     }
 
-    footer div img:hover {
+    img[src="../img/MJrecord22.jpg"] {
         width: 416px;
         height: 416px;
+
+        bottom: 438px;
+    }
+
+    .bildegrid-2 {
+        height: 600px;
+    }
+
+    /*footer div img:hover {
+        width: 416px;
+        height: 416px;
+    }*/
+
+    #middleboxes2 {
+        bottom: 438px;
     }
 
     #middleboxes2 > :first-child {
@@ -953,6 +1057,15 @@ h5 {
 
 
 @media (min-width: 501px) and (max-width: 799px) {
+
+    img[src="../img/MJrecord11.jpg"] {
+        display: none;
+    }
+
+    img[src="../img/MJrecord22.jpg"] {
+        display: none;
+    }
+
     body {
         background-image: url(../img/white.png);
     }
@@ -1068,6 +1181,7 @@ h5 {
     section div img:hover {
         width: 46vw;
         height: 46vw;
+        opacity: 1;
     }
 
     .middleboxes1 > :first-child {
@@ -1099,8 +1213,6 @@ h5 {
     .bottomboxes-1 :nth-child(2) {
         grid-column: 3 / 5;
         grid-row: 1;
-
-        margin-right: ;
     }
     
     .bottomboxes-1 :nth-child(3) {
@@ -1141,7 +1253,7 @@ h5 {
         grid-template-columns: 2;
         grid-row: 1;
 
-        max-height: 22.7vw;
+        max-height: 22.99vw;
         margin-top: 5%;
 
         border-radius: 0 20px 0 0;
@@ -1205,6 +1317,7 @@ h5 {
     footer div img:hover {
         width: 46vw;
         height: 46vw;
+        opacity: 1;
     }
 
     #middleboxes2 > :first-child {
