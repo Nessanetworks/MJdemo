@@ -1,0 +1,9 @@
+Länk till Repository. 
+https://github.com/Nessanetworks/MJdemo
+
+Länk till hemsidan via FileZilla:
+http://www.maumt.se/wdu/ht23/students/VenessaW/MJdemo/
+
+eller
+
+http://www.maumt.se/wdu/ht23/students/MJdemo/
